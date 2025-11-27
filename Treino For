@@ -1,0 +1,35 @@
+import os
+lista_numero = [1,2,3,4,5,6,7,8,9,10]
+lista_nome = ['Joao', 'Andre', 'Renata', 'Vitória']
+lista_ano = [1980, 2025]
+lista_loop = []
+
+i=0
+b=0
+a=0
+media = 0
+
+def media_numero():
+    i=0
+    b=0
+    a=0
+    for numero in lista_numero:
+                         
+        if numero % 2 == 0:
+            a += numero
+            b += 1                        
+
+    media = a/b
+    return media    
+    
+print (media_numero())
+
+
+def elementos():
+    sim_nao = input('Digite S para imprimir todos os elementos da lista de números: ')
+    if sim_nao == 'S':
+        for elemento in lista_numero:
+        
+            print (elemento)
+
+print (elementos())
